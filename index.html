@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="./front.js" defer></script>
+        <style>
+            .list {
+                border: 1px rgb(167, 161, 161) outset;
+                width: 400px;
+                margin: 20px;
+            }
+            .box {
+                border: 2px rgb(209, 188, 188) ridge;
+                width: 500px;
+                margin-bottom: 20px;
+                background-color: rgb(200, 200, 200);
+            }
+            h1 {
+                margin-left: 10px;
+                border: 5px rgb(158, 151, 151) outset;
+                width: 400px;
+            }
+            .red {
+                height: 15px;
+                width: 15px;
+                border-radius: 100px;
+                background-color: rgb(209, 0, 59);
+            }
+            .green {
+                height: 15px;
+                width: 15px;
+                border-radius: 100px;
+                background-color: rgb(59, 180, 73);
+            }
+            #total {
+                border: 2px rgb(158, 151, 151) outset;
+            }
+            #borrow {
+                background-color: rgb(213, 210, 210);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1>도서 목록</h1>
+            <div id="도서">
+                <div class="list">
+                    <button class="book" data-name="얄코지식" data-status="0">
+                        얄코지식
+                    </button>
+                    상태 :
+                    <span> 대출가능 <button class="green"></button> </span>
+                </div>
+                <div class="list">
+                    <button
+                        class="book"
+                        data-name="짱구는 못말려"
+                        data-status="1"
+                    >
+                        짱구는 못말려
+                    </button>
+                    상태 : <span> 대여중 </span><button class="red"></button>
+                </div>
+                <div class="list">
+                    <button
+                        class="book"
+                        data-name="네모바지 스폰지밥"
+                        data-status="0"
+                    >
+                        네모바지 스폰지밥
+                    </button>
+                    상태 : <span> 대출가능 </span
+                    ><button class="green"></button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <h1>도서 대여 장바구니</h1>
+            <ul id="cartList"></ul>
+            총<span id="total">0</span>권 <button id="borrow">대여하기</button>
+        </div>
+        <div class="box">
+            <h1>나의 도서 대여 현황</h1>
+            <ul id="bookUl">
+            </ul>
+            
+        </div>
+    </body>
+</html>
