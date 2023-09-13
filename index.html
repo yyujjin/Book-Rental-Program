@@ -37,16 +37,14 @@
             #total {
                 border: 2px rgb(158, 151, 151) outset;
             }
-            #borrow {
-                background-color: rgb(213, 210, 210);
-            }
+            
             
         </style>
     </head>
     <body>
         <div class="box">
             <h1>도서 목록</h1>
-            <div id="도서">
+            <div id="bookdiv">
                 <div class="list">
                     <button class="book" data-name="얄코지식" data-status="0">
                         얄코지식
@@ -78,15 +76,11 @@
             </div>
         </div>
         <div class="box">
-            <h1>도서 대여 장바구니</h1>
-            <ul id="cartList"></ul>
-            총<span id="total">0</span>권 <button id="borrow">대여하기</button>
-        </div>
-        <div class="box">
             <h1>나의 도서 대여 현황</h1>
             <ul id="bookUl">
+                <li>책 제목 : 잃어버린 세계를 찾아서 </li>
             </ul>
-            
+            <span id="total">총 0 권</span>
         </div>
     </body>
 </html>
