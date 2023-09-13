@@ -20,7 +20,7 @@ let libraryBookList = [
         amount: 1,
     },
     {
-        name: "너무 힘들다",
+        name: "룰루 랄라",
         status: "대여 가능",
         color: "green",
         amount: 1,
